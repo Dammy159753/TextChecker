@@ -1,0 +1,16 @@
+.idea
+__pycache__
+log_tqc
+log_tqc.txt
+output/
+DatasetGenerate.py
+zh_testing.py
+chinese_check/__pycache__
+english_check/__pycache__
+formula_check/__pycache__
+formula_check/LaTexMap/__pycache__
+Faspell/__pycache__
+Faspell/bert_modified/__pycache__
+chinese_check/ancient_chinese/__pycache__
+.git
+english_check/GEC_check/lm_model/

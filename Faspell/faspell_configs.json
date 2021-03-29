@@ -1,0 +1,28 @@
+
+{
+  "general_configs": {
+    "rank": 1,
+    "round": 1,
+    "weights": {
+      "visual": 0,
+      "phonological": 1
+    },
+    "char_meta": "Faspell/data/char_meta.txt",
+    "lm": {
+      "max_seq": 105,
+      "top_n": 5,
+      "batch_size": 5,
+      "vocab": "Faspell/model/pre-trained/vocab.txt",
+      "bert_configs": "Faspell/model/pre-trained/bert_config.json",
+      "fine_tuning_is_on": true
+    }
+  },
+  "exp_configs": {
+    "union_of_sims": false,
+    "tackle_n_gram_bias": true,
+    "dump_candidates": "",
+    "read_from_dump": false,
+    "filter_is_on": true,
+    "store_latex": ""
+  }
+}

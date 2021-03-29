@@ -1,0 +1,47 @@
+2021-01-12 16:17:37,528:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:23: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2021-01-12 16:17:37,531:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:103: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2021-01-12 16:17:37,633:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:123: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2021-01-12 16:17:37,650:WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2021-01-12 16:17:38,076:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:138: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2021-01-12 16:17:38,077:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:143: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2021-01-12 16:17:38,078:WARNING: From /home/user/anaconda3/envs/lc_env/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2021-01-12 16:17:38,124:WARNING: From /home/user/anaconda3/envs/lc_env/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:958: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+2021-01-12 16:17:38,129:WARNING: From /home/user/anaconda3/envs/lc_env/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn_cell_impl.py:962: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2021-01-12 16:17:38,140:WARNING: From /home/user/anaconda3/envs/lc_env/lib/python3.7/site-packages/tensorflow_core/python/ops/rnn.py:244: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2021-01-12 16:17:38,233:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:154: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2021-01-12 16:17:38,544:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/ner_model.py:214: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2021-01-12 16:17:38,545:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/base_model.py:43: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2021-01-12 16:17:39,535:INFO: Initializing tf session
+2021-01-12 16:17:39,535:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/base_model.py:64: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-01-12 16:17:40,249:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/base_model.py:65: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-01-12 16:17:40,593:WARNING: From /media/chen2/fxj/Text_Quality_Check_dev/english_check/model/base_model.py:66: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2021-01-12 16:17:40,622:INFO: Reloading the latest trained model...
