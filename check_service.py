@@ -111,8 +111,16 @@ def text_quality_check():
     # step3: 开始检测
     pre_start = time.time()
     try:
-        ### 这里是检测的入口 ###
-        check_result = controller.parse(query_json)
+        with counter.get_lock():
+            ### 这里是检测的入口 ###
+            check_result = controller.parse(query_json)  # 处理主函数
+            counter.value += 1
+            current_file_path = os.path.join(os.getcwd()+'/access_date', ''.join(start_time[0:10].split('-'))+'.txt')
+            with open(current_file_path, 'w', encoding='utf-8') as f:
+                localtime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+                st, end = start_time[0:10].split('-'), localtime[0:10].split('-')
+                spend_time = (datetime.datetime(int(end[0]), int(end[1]), int(end[2])) - datetime.datetime(int(st[0]), int(st[1]), int(st[2]))).days
+                f.write("开始时间: {}, 当前时间: {}, 共 {} 天, 使用量 {} 次".format(start_time, localtime, spend_time, str(counter.value)))
     except Exception as e:
         log_server.logging('Predict Error: {}'.format(e))
         result['code'] = config['RETURN_CODE']['HANDLE_ERROR']
